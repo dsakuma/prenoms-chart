@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/application.css" media="screen" rel="stylesheet" type="text/css">
+	<script data-main="js/main" src="js/lib/require.js"></script>
+
+</head>
+
+<body>
+
+<h1>Prenoms Chart</h1>
+
+<div id="content">
+  <div id="left_side">
+    <form id="search">
+          <input src="images/search.png" type="image">
+          <input autocomplete="off" type="text" style="width: 510px;">
+          <a class="clear" href="#" style="display: none">
+            <img src="images/clear.png">
+          </a>
+        </form>
+        <div id="prenoms_list_container">
+          <ul></ul>
+        </div>
+  </div>
+  <div id="right_side">
+    <svg width="1224" height="450">
+      <defs>
+        <clipPath id="graphs_clip_path">
+          <rect></rect>
+        </clipPath>
+      </defs>
+      <rect id="playground_bg"></rect>
+      <g class="axis" id="x_axis"></g>
+      <g class="axis" id="y_axis"></g>
+      <g id="prenoms">
+        <g id="lines"></g>
+        <g id="circles"></g>
+        <g id="labels"></g>
+      </g>
+      <g id="popup"></g>
+      <g id="year_zoomers"></g>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
